@@ -66,6 +66,10 @@ export default {
     ],
   },
   networks: {
+    custom: {
+      ...sharedNetworkConfig,
+      url: process.env.RPC_URL || '',
+    },
     mainnet: {
       ...sharedNetworkConfig,
       url: `https://mainnet.infura.io/v3/${INFURA_KEY}`,
