@@ -4,7 +4,7 @@ const singletonFactoryAbi = [
   "function deploy(bytes memory _initCode, bytes32 _salt) public returns (address payable createdContract)",
 ];
 export const SingletonFactoryAddress =
-  "0xce0042b868300000d44a59004da54a005ffdcf9f";
+  "0xCd47A4992BeC3dd1851a448d512800dEC7ba9e9e";
 
 /**
  * Get the singleton factory contract (ERC-2470).

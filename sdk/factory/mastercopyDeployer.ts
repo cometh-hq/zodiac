@@ -132,7 +132,7 @@ export const deployMastercopyWithInitData = async (
       gasLimit = 8000000;
       break;
     default:
-      gasLimit = 10000000;
+      gasLimit = 8000000;
   }
   const deployTx = await singletonFactory.deploy(initCode, salt, {
     gasLimit,
