@@ -68,8 +68,9 @@ export default {
   networks: {
     custom: {
       ...sharedNetworkConfig,
-      url: process.env.RPC_URL || '',
+      url: process.env.RPC_URL || "",
     },
+
     mainnet: {
       ...sharedNetworkConfig,
       url: `https://mainnet.infura.io/v3/${INFURA_KEY}`,
@@ -102,6 +103,15 @@ export default {
       ...sharedNetworkConfig,
       url: `https://polygon-mumbai.g.alchemy.com/v2/${ALCHEMY_KEY}`,
     },
+    amoy: {
+      ...sharedNetworkConfig,
+      url: `https://polygon-amoy.infura.io/v3/2e1346349a5d4a24aeba9dee6c7b20b5`,
+      gasPrice: 30000000000,
+    },
+    XL: {
+      ...sharedNetworkConfig,
+      url: `http://90.120.6.91:9650/ext/bc/2HN8vrS7vKPxw2hMAkXyhKqxQurfyBaVukCWuR442q3YimaeHQ/rpc`,
+    },
     avalanche: {
       ...sharedNetworkConfig,
       url: `https://avalanche-mainnet.infura.io/v3/${INFURA_KEY}`,
@@ -113,6 +123,14 @@ export default {
     lineaGoerli: {
       ...sharedNetworkConfig,
       url: `https://linea-goerli.infura.io/v3/${INFURA_KEY}`,
+    },
+    arbitrum_sepolia: {
+      ...sharedNetworkConfig,
+      url: "https://arbitrum-sepolia.infura.io/v3/" + process.env.INFURA_KEY,
+    },
+    base_sepolia: {
+      ...sharedNetworkConfig,
+      url: "https://base-sepolia.g.alchemy.com/v2/" + process.env.INFURA_KEY,
     },
   },
   namedAccounts: {
